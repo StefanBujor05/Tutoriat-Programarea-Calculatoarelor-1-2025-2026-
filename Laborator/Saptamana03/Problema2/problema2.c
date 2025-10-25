@@ -1,37 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int v[1000];
+
 int main(){
-    FILE* fin=fopen("file.in","r");
     int n,m;
-    int v[4005];
-    fscanf(fin,"%d%d",&n,&m);
+    scanf("%d",&n);
     for(int i=0;i<n;i++){
-        int x;
-        fscanf(fin,"%d",&x);
-        if(x<0)
-            v[x*2]=1;
+        scanf("%d",&v[i]);
+    }
+    int x,y,xpoz,ypoz;
+    scanf("%d %d",&x,&y);
+    /// CAUTAREA BINARA pe x
+    int st=0;
+    int dr=n-1;
+    while(st<=dr) {
+        int mij=st+(dr-st)/2;
+        if(v[mij]==x)
+            xpoz=mij;
+        if(v[mij]<x)
+            st=mij+1;
         else
-            v[x]=1;
+            dr=mij-1;
     }
-    for(int i=0;i<m;i++){
-        int x;
-        fscanf(fin,"%d",&x);
-        if(x<0){
-            if(v[x*2]==1)
-                v[x*2]=2;
-        }
-        else{
-            if(v[x]==1)
-                v[x]=2;
-        }
+    /// CAUTAREA BINARA pe y
+    st=0;
+    dr=n-1;
+    while(st<=dr) {
+        int mij=st+(dr-st)/2;
+        if(v[mij]==y)
+            ypoz=mij;
+        if(v[mij]<y)
+            st=mij+1;
+        else
+            dr=mij-1;
     }
-    int rez=0;
-    for(int i=0;i<m+n;i++){
-        if(v[i]==2){
-            rez++;
-        }
+    for(int i=xpoz;i<=ypoz;i++){
+        printf("%d ",v[i]);
     }
-    printf("%d",rez);
     return 0;
 }
