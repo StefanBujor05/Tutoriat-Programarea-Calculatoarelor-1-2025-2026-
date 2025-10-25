@@ -13,7 +13,7 @@ int main(){
             v[x*2]=1;
         else
             v[x]=1;
-    }s
+    }
     for(int i=0;i<m;i++){
         int x;
         fscanf(fin,"%d",&x);
