@@ -1,148 +1,93 @@
-#include <bits/stdc++.h>
+#include <stdio.h>
+#include <string.h>
 
-using namespace std;
+char a[25],b[25],c[25];
 
-struct numarmare{
-    int v[1005];
-    char semn;
-};
-
-numarmare a,b,sum;
-
-string s1,s2;
-int n,m,r,x,y;
-
-bool compare(numarmare a,numarmare b,int size)
-{
-    int i=size;
-    while(a.v[i]==b.v[i])
-        i--;
-    if(a.v[i]<b.v[i])
-        return true;
-    else
-        return false;
-}
-
-int suma(numarmare a,numarmare b,numarmare &sum)
-{
-    bool add=true;
-    r=max(s1.size(),s2.size());
-    int rest=0,size=0,urest=0;
-    if(a.semn=='-' && b.semn=='-')
-    {
-        sum.semn='-';
-        add=true;
+int main() {
+    int n=0;
+    scanf("%s",a);
+    scanf("%s",b);
+    if (strlen(a)>=strlen(b))
+        n=strlen(a);
+    if (strlen(a)<strlen(b))
+        n=strlen(b);
+    memset(c, '0', n+1);
+    c[n + 1] = '\0';
+    if (strlen(a)<strlen(b)) {
+        char temp[20];
+        strcpy(temp,a);
+        strcpy(a,b);
+        strcpy(b,temp);
     }
-    if(a.semn=='+' && b.semn=='+')
-    {
-        sum.semn='+';
-        add=true;
+    while (strlen(a) > strlen(b)) {
+        memmove(b + 2, b + 1, strlen(b));
+        b[1] = '0';
     }
-    if((a.semn=='+' && b.semn=='-') || (a.semn=='-' && b.semn=='+'))
-        add=false;
-    if(add==true)
-    {
-        for(int i=0;i<=r;i++)
-        {
-            urest=rest;
-            sum.v[i]=(a.v[i]+b.v[i]+rest)%10;
-            rest = (a.v[i]+b.v[i]+rest)/10;
+
+    if (a[0]=='+' && b[0]=='+') {
+        for (int i=strlen(a)-1;i>0;i--) {
+            int val = a[i] -'0' + b[i] - '0' + c[i]-'0';
+            c[i]=val%10+'0';
+            c[i-1]=val/10+'0';
         }
-        if(urest!=0)
-            size=r;
-        else
-            size=r-1;
+        printf("%c",'+');
+        int incep = 0;
+        for (int i = 0; i < n ; i++) {
+            if (c[i] != '0') incep = 1;
+            if (incep) printf("%c", c[i]);
+        }
     }
-    else
-    {
-        if(b.semn=='-' && compare(a,b,r+5)==false)
-            sum.semn='+';
-        else
-        if(b.semn=='+' && compare(a,b,r+5)==false)
-            sum.semn='-';
-        else
-        if(b.semn=='-' && compare(a,b,r+5)==true)
-        {
-            sum.semn='-';
-            swap(a,b);
-        }
-        else
-        if(b.semn=='+' && compare(a,b,r+5)==true)
-        {
-            sum.semn='+';
-            swap(a,b);
-        }
-        rest=0;
-        for(int i=0;i<r;i++)
-        {
-            if(a.v[i]-rest-b.v[i]<0)
-            {
-                sum.v[i]=a.v[i]+10-rest-b.v[i];
-                rest=1;
-            }
-            else
-            {
-                sum.v[i]=a.v[i]-b.v[i]-rest;
-                rest=0;
+    if ((a[0] == '+' && b[0] == '-') || (a[0] == '-' && b[0] == '+')) {
+        int cmp = 0;
+        if (strlen(a) > strlen(b)) {
+            cmp = 1;
+        } else if (strlen(a) < strlen(b)) {
+            cmp = -1;
+        } else {
+            if (strcmp(a + 1, b + 1) > 0) {
+                cmp = 1;
+            } else if (strcmp(a + 1, b + 1) < 0) {
+                cmp = -1;
+            } else {
+                cmp = 0;
             }
         }
-    }
-    return r+5;
-}
-
-int  main()
-{
-    ///CITIRE
-    getline(cin,s1);
-    getline(cin,s2);
-    n=s1.size();m=s2.size();
-    ///SETARE SEMN
-    if(s1[0]=='+' || s1[0]=='-')
-    {
-        a.semn=s1[0];
-        s1.erase(s1.begin());
-    }
-    else
-        a.semn='+';
-
-    if(s2[0]=='+' || s2[0]=='-')
-    {
-        b.semn=s2[0];
-        s2.erase(s2.begin());
-    }
-    else
-        b.semn='+';
-
-    ///TRADUCERE DIN STRING IN STRUCT
-
-    int k=0;
-    for(int i=s1.size()-1;i>=0;i--)
-    {
-        a.v[k]=s1[i]-'0';
-        k++;
-    }
-    k=0;
-    for(int i=s2.size()-1;i>=0;i--)
-    {
-        b.v[k]=s2[i]-'0';
-        k++;
-    }
-    ///OPERATII
-    int marime;
-    marime=suma(a,b,sum);
- 
-    //AFISARE
-    if(sum.semn=='-')
-        cout<<'-';
-    bool incepf=true;
-    for(int i=marime;i>=0;i--)
-    {
-        while(sum.v[i]==0 && incepf==true)
-        {
-            i--;
+        char signResult = '+';
+        if (cmp == 0) {
+            printf("0");
+            return 0;
         }
-        incepf=false;
-        cout<<sum.v[i];
+        if (cmp > 0) {
+            signResult = a[0];
+        } else {
+            signResult = b[0];
+        }
+        char larger[25], smaller[25];
+        if (cmp > 0) {
+            strcpy(larger, a);
+            strcpy(smaller, b);
+        } else {
+            strcpy(larger, b);
+            strcpy(smaller, a);
+        }
+        for (int i = strlen(larger) - 1; i > 0; i--) {
+            int val = (larger[i] - '0') - (smaller[i] - '0');
+            if (val < 0) {
+                larger[i - 1]--;
+                val += 10;
+            }
+            c[i] = val + '0';
+        }
+        printf("%c", signResult);
+        int incep = 0;
+        for (int i = 1; i < n; i++) {
+            if (c[i] != '0') {
+                incep = 1;
+            }
+            if (incep) {
+                printf("%c", c[i]);
+            }
+        }
     }
     return 0;
 }
