@@ -29,10 +29,8 @@ Daca aveti intrebari trimiteti-le pe Whatsapp!
  6. [**Cerinta Seminar 6**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/blob/main/Seminar/Cerinte/seminar_6_PC.pdf)
  
 ### Rezolvari Seminar
- 1. [**Seminar 1**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Seminar/Seminar01 )
+ 1. [**Seminar 1**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Seminar/Seminar01)
  2. [**Seminar 2**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Seminar/Seminar02)
- - Restul vor aparea dupa ce ati facut la seminarul
-
  
 ## Laborator
 ### Cerinte Laborator
@@ -52,7 +50,6 @@ Daca aveti intrebari trimiteti-le pe Whatsapp!
  1. [**Laborator 1**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Laborator/Saptamana01)
  2. [**Laborator 2**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Laborator/Saptamana02)
  3. [**Laborator 3**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Laborator/Saptamana03)
- - Restul vor aparea dupa ce ati facut laboratorul
 
 ## Examen
 
