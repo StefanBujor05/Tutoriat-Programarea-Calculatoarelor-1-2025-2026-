@@ -14,10 +14,6 @@ Daca aveti intrebari trimiteti-le pe Whatsapp!
 
 ##  Tutoriat
 
-### Exercitii Tutoriat
-
-- Vor fi postate odata ce sunt lucrate la tutoriat
-
 ## Seminar
 
 ### Cerinte Seminar
