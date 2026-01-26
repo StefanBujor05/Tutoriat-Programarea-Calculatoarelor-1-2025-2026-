@@ -1,0 +1,7 @@
+1 2 3 f g 4
+
+megadeth obituary morbid angel
+
+char s[10];
+
+s = fgets() ---> s = megadeth, s = obituary
