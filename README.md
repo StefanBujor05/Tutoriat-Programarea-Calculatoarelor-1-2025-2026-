@@ -64,8 +64,10 @@ Daca aveti intrebari trimiteti-le pe Whatsapp!
 
 ### Cerinta
  - [**Cerinta Restanta 2025**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/blob/main/Examene/Examen%202025/restanta_iarna_2025.pdf)
- - [**Cerinta Examen 2025**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/blob/main/Examene/Examen%202025/examen2025.pdf)
+ - [**Cerinta Examen 2025**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Examene/Examen%202025/examenPC2025/examen2025.pdf)
  - [**Cerinta Examen 2024**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/blob/main/Examene/Examen%202024/examen2024.pdf)
 
 ### Rezolvari
- - - [**Rezolvare Examen 2025**]([https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/blob/main/Examene/Examen%202025/examen2025.pdf](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Examene/Examen%202025/examenPC2025))
+ - [x] [**Rezolvare Examen 2025**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Examene/Examen%202025/examenPC2025)
+ - [ ] [**Rezolvare Restanta 2025**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/)
+ - [ ] [**Rezolvare Examen 2024**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/)
