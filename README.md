@@ -68,4 +68,4 @@ Daca aveti intrebari trimiteti-le pe Whatsapp!
  - [**Cerinta Examen 2024**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/blob/main/Examene/Examen%202024/examen2024.pdf)
 
 ### Rezolvari
- - Vor fi rezolvate la tutoriat la final de semestru si postate atunci
+ - - [**Rezolvare Examen 2025**]([https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/blob/main/Examene/Examen%202025/examen2025.pdf](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Examene/Examen%202025/examenPC2025))
