@@ -10,9 +10,7 @@
     S = P*0.1 + R*0.1;
     N = min(10, E*0.6 + L*0.4 + S);
 
-Daca aveti intrebari trimiteti-le pe Whatsapp!
-
-##  Tutoriat
+### Daca aveti intrebari trimiteti-le pe Whatsapp!
 
 ## Seminar
 
