@@ -68,5 +68,6 @@
 ### Rezolvari
  - [x] [**Rezolvare Examen 2025**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Examene/Examen%202025/examenPC2025)
  - [x] [**Rezolvare Restanta 2025**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Examene/Examen%202025/restantaPC2025)
+
 ### Videouri
  - [![Rezolvare Restanta 2025](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/blob/main/Examene/Examen%202025/restantaPC2025/ss.png)](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/blob/main/Examene/Examen%202025/restantaPC2025/Examen_2025_Restanta%20(2026-01-27%2016_04%20GMT%2B2).mp4)
