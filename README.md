@@ -67,4 +67,4 @@
 
 ### Rezolvari
  - [x] [**Rezolvare Examen 2025**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Examene/Examen%202025/examenPC2025)
- - [x] [**Rezolvare Restanta 2025**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/)
+ - [x] [**Rezolvare Restanta 2025**](https://github.com/StefanBujor05/Tutoriat-Programarea-Calculatoarelor-1-2025-2026-/tree/main/Examene/Examen%202025/restantaPC2025)
